@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="../css/sitio.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single+Ink:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        p {
+            min-height: 375px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Contenedor principal de la página 
+         Otro comentario    
+     -->
+    <div class="wrapper">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <a href="./mipagina.html" title="Inicio del Sitio">
+                    <img src="https://ucenfotec.ac.cr/wp-content/uploads/2021/12/Logo-Ucenfotec-250-105-.png"
+                        title="Imagen sobre mi página 1" alt="Imagen del logo de mi página" width="125" height="52">
+                </a>
+            </div>
+            <div class="titulo">
+                <h1>Título del Sitio Web</h1>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li>
+                    <a id="BotónInicio" href="./mipagina.html" title="Inicio del Sitio">Inicio</a>
+                </li>
+                <li>
+                    <a id="BotónSecciónA" href="#seccion_a" title="Ir a la Sección A">Sección A</a>
+                </li>
+                <li>
+                    <a id="BotónSecciónB" href="#seccion_b" title="Ir a la Sección B">Sección B</a>
+                </li>
+                <li>
+                    <a id="BotónSecciónC" href="#seccion_c" title="Ir a la Sección C">Sección C</a>
+                </li>
+                <li>
+                    <a href="#seccion_d" title="Ir a la Sección D">Sección D</a>
+                </li>
+                <li>
+                    <a href="./ejemplohtmlsemantico.html" title="Ir a ejemplo de HTML Semántico">Ejemplo HTML
+                        Semántico</a>
+                </li>
+                <li>
+                    <a href="https://www.google.com" target="_blank" title="Ir a Google">Google</a>
+                </li>
+            </ul>
+        </nav>
+        <aside class="textoresaltado parrafoespecial">
+            SIDEBAR
+        </aside>
+        <main>
+
+            <div id="General">
+                <p class="bitcount-single-ink-text" style="color:brown; padding:100px; padding-bottom:200px; border-top: 8px solid blue;
+                margin:30px;margin-bottom:50px; width: 900px; box-sizing: border-box;">Primer párrafo</p>
+                <p>Segundo párrafo</p>
+                <p class="textoresaltado">Tercer párrafo</p>
+            </div>
+
+            <article>
+                <h2 class="textoresaltado">Bienvenidos!</h2>
+                <p>Mi sitio es ...</p>
+                <p>
+                    <picture>
+                        <source
+                            srcset="https://img.freepik.com/psd-premium/computadora-escritorio-moderna-pantalla-blanco_740686-8971.jpg?semt=ais_hybrid&w=740&q=80"
+                            media="(min-width: 1680px)" />
+                        <source
+                            srcset="https://static.vecteezy.com/system/resources/thumbnails/025/366/622/small_2x/laptop-with-blank-screen-isolate-on-transparent-background-ai-generated-png.png"
+                            media="(min-width: 1366px)" />
+                        <source
+                            srcset="https://png.pngtree.com/png-vector/20220406/ourmid/pngtree-tablet-device-mockup-png-image_4530609.png"
+                            media="(min-width: 640px)" />
+                        <source
+                            srcset="https://png.pngtree.com/png-clipart/20230206/ourmid/pngtree-cell-phone-mockup-png-image_6584021.png"
+                            media="(min-width: 360px)" />
+                        <img src="https://ucenfotec.ac.cr/wp-content/uploads/2021/12/Logo-Ucenfotec-250-105-.png"
+                            alt="Imagen por Defecto">
+                    </picture>
+
+                </p>
+            </article>
+
+            <!-- Sección Noticias -->
+            <section id="seccion_a">
+                <header>
+                    <h2>Sección A</h2>
+                </header>
+                <p>La sección A es ...</p>
+                <p>
+                    <map name="redessociales">
+                        <area title="Pulsa aquí para ir a Facebook" shape="rect" target="_blank" coords="0,0 100,100"
+                            href="https://www.facebook.com" alt="Facebook" />
+                    </map>
+                    <img usemap="#redessociales" src="../assets/img/eventoajedrez.png" alt="Evento de Ajedrez ..."
+                        width="500" height="500" />
+
+                </p>
+            </section>
+
+            <section id="seccion_b">
+                <header>
+                    <h2>Sección B</h2>
+                </header>
+                <p>La sección B es ...</p>
+                <div>
+                    <!-- <video src="../assets/video/rabbit320.mp4" controls>
+                        <p>El navegador actual no soporta videos de HTML5. Aquí está el
+                            <a href="../assets/video/rabbit320.mp4">enlace de descarga.</a>.
+                        </p>
+                    </video> -->
+
+                    <!-- <video controls width="500" height="500" autoplay muted loop poster="../assets/img/ucenfotec.png"> -->
+                    <video controls width="300" height="auto" muted loop poster="../assets/img/ucenfotec.png">
+                        <source src="../assets/video/rabbit320.mp4" type="video/mp4">
+                        <source src="../assets/video/rabbit320.webm" type="video/webm">
+                        <track kind="subtitles" label="ES" srclang="es" src="../assets/texto_es.vtt">
+                        </track>
+                        <track kind="subtitles" label="EN" srclang="en" src="../assets/texto_en.vtt">
+                        </track>
+                        <p>El navegador actual no soporta videos de HTML5. Aquí está el
+                            <a href="../assets/video/rabbit320.mp4">enlace de descarga.</a>.
+                        </p>
+                    </video>
+
+                </div>
+            </section>
+
+            <section id="seccion_c">
+                <header>
+                    <h2>Sección C</h2>
+                </header>
+                <p>La sección C es ...</p>
+                <div>
+                    <audio controls autoplay loop muted>
+                        <source src="../assets/audio/viper.mp3" type="audio/mp3">
+                        <source src="../assets/audio/viper.ogg" type="audio/ogg">
+                        <p>El navegador actual no es compatible con audio HTML5. Aquí hay un
+                            <a href="../assets/audio/viper.mp3">enlace de descarga</a>.
+                        </p>
+                    </audio>
+                </div>
+            </section>
+
+            <section id="seccion_d">
+                <header>
+                    <h2>Sección D</h2>
+                </header>
+                <p>Listado de resultados:</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Teléfono</th>
+                            <th>Correo Electrónico</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="parrafoespecial">Juan Castro</td>
+                            <td>8000-0000</td>
+                            <td>juan@correo.com</td>
+                        </tr>
+                        <tr>
+                            <td>Mónica</td>
+                            <td>8000-0001</td>
+                            <td>monica@correo.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </section>
+
+        </main>
+        <footer>
+            <p class="parrafoespecial">Todos los derechos reservados 2025</p>
+            <p>
+                <a href="mailto:info@correo.com?cc=info2@correo.com&bcc=info3@correo.com&subject=Consulta&body=Comentarios"
+                    alt="Opción de contacto">Información de Contacto 1</a>
+                <a href="mailto:info@correo.com?cc=info2@correo.com&bcc=info3@correo.com&subject=Consulta&body=Comentarios"
+                    alt="Opción de contacto">Información de Contacto 2</a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

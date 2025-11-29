@@ -1,0 +1,30 @@
+table{
+    width: 50%;
+}
+
+label {
+    font-weight: bold;    
+}
+
+input[type="text"], input[type="email"], textarea, input[type="tel"], select, input[type="password"], input[type="range"] {
+    width: 300px;
+}
+
+input[type="number"], input[type="date"] {
+    width: 200px;
+}
+
+button, input[type="submit"] {
+    width: 150px;
+    font-weight: bold;
+    background-color:cadetblue;
+    color: blue;
+}
+
+.centrado{
+    text-align: center;
+}
+
+td{
+    padding: 5px;
+}

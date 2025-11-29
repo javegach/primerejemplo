@@ -1,0 +1,43 @@
+table{
+    width: 50%;
+}
+
+label {
+    font-weight: bold;    
+}
+
+input[type="text"], input[type="email"], textarea, input[type="tel"], select, input[type="password"], input[type="range"] {
+    width: 300px;
+}
+
+input[type="number"], input[type="date"] {
+    width: 200px;
+}
+
+button, input[type="submit"] {
+    width: 150px;
+    font-weight: bold;
+    background-color:cadetblue;
+    color: blue;
+}
+
+.centrado{
+    text-align: center;
+}
+
+td{
+    padding: 5px;
+}
+
+.error{
+    display:block;
+    width: 308px;
+    padding: 0;
+    margin:0;
+    font-size: 1.1rem;
+    color:white;
+    background-color: gray;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+}
+

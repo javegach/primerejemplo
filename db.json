@@ -1,0 +1,33 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "1",
+      "nombre": "Pedro Salas",
+      "correo": "pedro@gmail.com",
+      "comentarios": "Texto 1 ...",
+      "telefono": "506-8888-1111"
+    },
+    {
+      "id": "3",
+      "nombre": "Rebeca",
+      "correo": "rebeca@gmail.com",
+      "comentarios": "HOla ...",
+      "telefono": "506-4454-4545"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

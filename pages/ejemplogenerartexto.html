@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Generar Texto</title>
+</head>
+<body>
+    
+    <div id="contenedor"></div>
+    <a href="javascript:escribirTexto()">Escribir Texto</a>
+    <br>
+    <a href="javascript:void(document.getElementById('contenedor').innerHTML = 'Escribiendo otro texto en el contenedor.');">Escribir Otro Texto</a>
+
+    <br><br>
+    <input type="text" id="fldTexto" onkeyup="escribirTextoIngresado()">
+
+    <br><br>
+    <input type="button" id="btnMostrar" value="Mostrar Imagen" onclick="mostrarImagen()">
+
+    <br><br>
+    <p id="contenedorp">Párrafo que se modificará a continuación.</p>
+    <button type="button" onclick="agregarTexto()">Agregar Texto</button>
+
+    <br><br>    
+    <button type="button" onclick="agregarElementos()">Agregar Elementos</button>
+
+    <br><br><br><br>
+
+    <script src="../js/ejemplogenerartexto.js"></script>
+    
+</body>
+</html>

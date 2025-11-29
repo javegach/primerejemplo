@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="../css/formulariocontactojs.css">
+</head>
+
+<body>
+
+<ul title="Lista de elementos">
+    <li><a href="./index.html">Inicio</a></li>
+    <li><a href="./quienessomos.html">Quienes Somos</a></li>
+    <li><a href="./ejemplohtmlsemantico.html">Ejemplo HTML Semántico</a></li>
+    <li><a href="./formulariocontacto.html">Formulario de Contacto</a></li>
+</ul>
+
+<h1>Formulario de Contacto</h1>
+
+<form novalidate>
+
+    <table>
+        <tr>
+            <td>
+                <label for="nombre">Nombre:</label>
+            </td>
+            <td>
+                <input type="text" id="nombre" name="persona_nombre" placeholder="Favor ingresar su nombre" value=""
+                minlength="3" maxlength="100" required>
+                <span class="error" aria-live="polite"></span>
+            </td>            
+        </tr>
+
+        <tr>
+            <td>
+                <label for="correo">Correo Electrónico:</label>
+            </td>
+            <td>
+                <input type="email" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" id="correo" name="persona_correo" placeholder="Favor ingresar su correo electrónico" value="">
+                <span class="error" aria-live="polite"></span>
+            </td>            
+        </tr>
+
+        <tr>
+            <td>
+                <label for="comentarios">Comentarios:</label>
+            </td>
+            <td>
+                <textarea id="comentarios" name="persona_comentarios" rows="6" placeholder="Favor ingresar sus comentarios"></textarea>
+                <span class="error" aria-live="polite"></span>
+            </td>            
+        </tr>
+
+        <tr>
+            <td>
+                <label for="telefono">Teléfono:</label>
+            </td>
+            <td>
+                <input type="tel" id="telefono" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" name="persona_telefono" placeholder="Favor ingresar su teléfono 506-1234-5678"
+                required value="">
+                <span class="error" aria-live="polite"></span>
+            </td>            
+        </tr>
+
+        <tr>
+            <td>
+                <label for="cantidad">Cantidad:</label>
+            </td>
+            <td>
+                <input type="number" id="cantidad" name="persona_cantidad" placeholder="Favor ingresar la cantidad" min="10" max="20"
+                required value="">
+                <span class="error" aria-live="polite"></span>
+            </td>            
+        </tr>
+
+        <tr>
+            <td>
+                <label>Seleccione una o varias opciones:</label>
+            </td>
+            <td>
+                <div>
+                    <input type="checkbox" id="consulta" name="persona_opcion">
+                    <label for="consulta">Consulta</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="soporte" name="persona_opcion" checked>
+                    <label for="soporte">Soporte</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="otra" name="persona_opcion">
+                    <label for="otra">Otra</label>
+                </div>
+            </td>            
+        </tr>
+
+        <tr>
+            <td>
+                <label>Seleccione una opción:</label>
+            </td>
+            <td>
+                <div>
+                    <input type="radio" id="consultas" name="persona_opciones">
+                    <label for="consultas">Consultas</label>
+                </div>
+                <div>
+                    <input type="radio" id="soportet" name="persona_opciones" checked>
+                    <label for="soportet">Soporte Técnico</label>
+                </div>
+                <div>
+                    <input type="radio" id="otras" name="persona_opciones">
+                    <label for="otras">Otras</label>
+                </div>
+            </td>            
+        </tr>
+
+        <tr>
+            <td>
+                <label for="pais">País:</label>
+            </td>
+            <td>
+                <select name="persona_pais" id="pais">
+                    <option value="costarica">Costa Rica</option>
+                    <option value="guatemala">Guatemala</option>
+                    <option value="nicaragua" selected>Nicaragua</option>
+                    <option value="honduras">Honduras</option>
+                </select>
+            </td>            
+        </tr>
+
+        <tr>
+            <td>
+                <label for="password">Contraseña:</label>
+            </td>
+            <td>
+                <input type="password" id="password" name="persona_password" placeholder="Favor ingresar su contraseña" value="">
+                <span class="error" aria-live="polite"></span>
+            </td>            
+        </tr>
+        
+        <tr>
+            <td>
+                <label for="archivo">Archivo:</label>
+            </td>
+            <td>
+                <input type="file" id="archivo" multiple name="persona_archivo" required>
+                <span class="error" aria-live="polite"></span>
+            </td>            
+        </tr>
+        
+        <tr>
+            <td>
+                <label for="unidades">Unidades:</label>
+            </td>
+            <td>
+                <input type="range" id="unidades" min="0" max="60" value="30" name="persona_unidades" oninput="this.nextElementSibling.nextElementSibling.value = this.value">
+                <span class="error" aria-live="polite"></span>
+                <output>30</output>
+            </td>            
+        </tr>
+
+        <tr>
+            <td>
+                <label for="fecha">Fecha:</label>
+            </td>
+            <td>
+                <input type="date" id="fecha" name="persona_fecha">
+                <span class="error" aria-live="polite"></span>
+            </td>            
+        </tr>
+
+        <tr class="centrado">
+            <td colspan="2">
+                <button type="submit">Enviar</button>
+            </td>
+        </tr>
+        <tr class="centrado">
+            <td colspan="2">
+                <input type="submit" value="Enviar">
+            </td>
+        </tr>
+        <tr class="centrado">
+            <td colspan="2">
+                <button type="reset">Limpiar</button>
+            </td>
+        </tr>
+        <tr class="centrado">
+            <td colspan="2">
+                <button type="button" onclick="alert('Hola!');">Mostrar Aviso</button>                
+            </td>
+        </tr>
+        <tr class="centrado">
+            <td colspan="2">
+                <button id="btnEjecutar" type="button">Ejecutar Evento</button>                
+            </td>
+        </tr>
+
+    </table>
+
+</form>
+
+<script src="../js/formulariocontactojs.js"></script>
+
+</body>
+
+</html>

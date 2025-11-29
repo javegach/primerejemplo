@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="../css/formulariocontactojs.css">
+</head>
+
+<body>
+
+<ul title="Lista de elementos">
+    <li><a href="./index.html">Inicio</a></li>
+    <li><a href="./quienessomos.html">Quienes Somos</a></li>
+    <li><a href="./ejemplohtmlsemantico.html">Ejemplo HTML Semántico</a></li>
+    <li><a href="./formulariocontacto.html">Formulario de Contacto</a></li>
+</ul>
+
+<h1>Formulario de Contacto</h1>
+
+<br><br>
+<form novalidate>
+
+    <table>
+        <tr>
+            <td>
+                <label for="id">Código:</label>
+            </td>
+            <td>
+                <input type="text" id="id" name="persona_id" placeholder="Favor ingresar el código del usuario a buscar" value=""
+                minlength="1" maxlength="100" required>
+                <span class="error" aria-live="polite"></span>
+            </td>            
+        </tr>
+
+         <tr>
+            <td>
+                <label for="nombre">Nombre:</label>
+            </td>
+            <td>
+                <input type="text" id="nombre" name="persona_nombre" placeholder="Favor ingresar su nombre" value=""
+                minlength="3" maxlength="100" required>
+                <span class="error" aria-live="polite"></span>
+            </td>            
+        </tr>
+
+        <tr>
+            <td>
+                <label for="correo">Correo Electrónico:</label>
+            </td>
+            <td>
+                <input type="email" id="correo" name="persona_correo" placeholder="Favor ingresar su correo electrónico" value="">
+                <span class="error" aria-live="polite"></span>
+            </td>            
+        </tr>
+
+        <tr>
+            <td>
+                <label for="comentarios">Comentarios:</label>
+            </td>
+            <td>
+                <textarea id="comentarios" name="persona_comentarios" rows="6" placeholder="Favor ingresar sus comentarios"></textarea>
+                <span class="error" aria-live="polite"></span>
+            </td>            
+        </tr>
+
+        <tr>
+            <td>
+                <label for="telefono">Teléfono:</label>
+            </td>
+            <td>
+                <input type="tel" id="telefono" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" name="persona_telefono" placeholder="Favor ingresar su teléfono 506-1234-5678"
+                required value="">
+                <span class="error" aria-live="polite"></span>
+            </td>            
+        </tr>
+     
+        <tr class="centrado">
+            <td colspan="2">
+                <button id="btnBuscar" type="button">Buscar Usuario</button>                
+            </td>
+        </tr>
+        <tr class="centrado">
+            <td colspan="2">
+                <button id="btnEliminar" type="button">Eliminar Usuario</button>                
+            </td>
+        </tr>
+        <tr class="centrado">
+            <td colspan="2">
+                <button id="btnRegistrar" type="button">Registrar Usuario</button>                
+            </td>
+        </tr>
+        <tr class="centrado">
+            <td colspan="2">
+                <button id="btnActualizar" type="button">Actualizar Usuario</button>                
+            </td>
+        </tr>
+
+    </table>
+
+</form>
+
+<script src="../js/ejemploajax.js"></script>
+
+</body>
+
+</html>

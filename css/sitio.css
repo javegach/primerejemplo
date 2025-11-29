@@ -1,0 +1,97 @@
+/* Selector de Elementos */
+p {
+    color: gray;
+    font-size:25px;
+    text-align: justify;
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+h1{
+    color:#34629D;
+}
+
+th{
+    font-weight: bold;
+    font-size:large;
+}
+
+footer {
+    background-color: blueviolet;
+}
+
+a {
+    background-color: lightgreen;
+}
+
+/* Selector de Clases */
+
+.parrafoespecial {
+    background-color: darkgoldenrod;
+    font-style:italic;
+    color:black;
+}
+
+.textoresaltado{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+}
+
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Selector de Id */
+
+#BotónInicio{
+    text-transform: uppercase;
+}
+
+#BotónSecciónA{
+    text-transform: lowercase;
+}
+
+/* Selector descendente */
+
+#General p:not(.textoresaltado) {
+    border: 4px solid red;
+}
+
+header h2{
+    background-color: darkseagreen;
+}
+
+.bitcount-single-ink-text {
+  font-family: "Bitcount Single Ink", system-ui;
+  font-optical-sizing: auto;
+  font-weight:bold;
+  font-size: 100px;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0,
+    "SZP1" 0,
+    "SZP2" 0,
+    "XPN1" 0,
+    "XPN2" 0,
+    "YPN1" 0,
+    "YPN2" 0;
+}
+
+@font-face {
+      font-family: "Bitstream Vera Serif Bold";
+      src: url("https://mdn.github.io/css-examples/web-fonts/VeraSeBd.ttf");
+}
+
+footer p { 
+    font-family: "Bitstream Vera Serif Bold", serif;
+    color:black;    
+}
+/* 
+html{
+    box-sizing: border-box;
+} */

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <button class="ocultar">Ocultar</button>
+    <button class="mostrar">Mostrar</button>
+
+    <p>Párrafo 1.</p>
+    <p id="parrafo2"><b>Párrafo 2.</b></p>
+
+    <p id="parrafo3">Párrafo 3.</p>
+
+    <br><br>
+    <input type="text" id="fldCampo" value="Contenido">
+
+    <br>
+    <a href="https://www.google.com" id="Google">Google.com</a>
+
+    <script>
+        $(document).ready(function(){
+
+            console.log($("#parrafo2").text());
+            console.log($("#parrafo2").html());
+            console.log($("#fldCampo").val());
+            console.log($("#Google").attr("href"));
+
+            $("#parrafo2").text("Parrafo Modificado.");
+            $("#fldCampo").val("Valor Modificado.");
+            $("#Google").attr("href", "https://www.gmail.com");
+
+            $("#parrafo2").append("<h2>Texto adicional.</h2>");
+
+            // $("button").click(function() {
+            //     // $("p").hide(); 
+            //     $("#parrafo2").hide();   
+            // });
+
+        $(".ocultar").click(function() {                
+                $("#parrafo2").hide(2000);   
+            });
+
+        $(".mostrar").click(function() {                
+                $("#parrafo2").toggle();   
+            });
+
+        });
+
+        $("#parrafo3").on({
+            mouseenter: function(){
+                $(this).css("background-color","blue");
+                alert("MouseEnter");
+            },
+            mouseleave: function(){
+                $(this).css("background-color","yellow");
+            },
+            click: function(){
+                $(this).css("background-color","green");
+            }
+        });
+
+
+        // $("p.estilo").acción()
+
+    </script>
+
+</body>
+</html>

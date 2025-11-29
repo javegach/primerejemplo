@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semántico</title>
+</head>
+<body>
+    
+<header>
+    <h1>Ejemplo de HTML Semántico</h1>
+</header>
+
+<div class="nav">
+    <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./quienessomos.html">Quienes Somos</a></li>
+        <li><a href="./ejemplohtmlsemantico.html">Ejemplo HTML Semántico</a></li>
+    </ul>
+</div>
+
+<main>
+
+    <br>
+    
+    <article>
+        <header>
+            <h2>Noticia Nacional ...</h2>
+        </header>        
+        <p>El día de hoy ...</p>
+    </article>
+
+    <br>
+
+    <article>
+        <h2>Noticia Internacional ...</h2>
+        <p>El día de hoy ...</p>
+    </article>
+
+    <br>
+
+    <p>Información del tipo de cambio...</p>
+
+    <details>
+        <summary>
+            Visual Studio Code
+        </summary>
+        <p>Es un editor creado por Microsoft ...</p>
+    </details>
+
+    <br>
+
+    <section>
+        <header>
+            <h2>Curso A1</h2>
+        </header>
+        <p>El curso A1 es para ...</p>
+    </section>
+
+    <section>
+        <h2>Curso B1</h2>
+        <p>El curso B1 es para ...</p>
+    </section>
+
+</main>
+
+<br>
+
+<aside>
+    <figure>
+        <img src="https://ucenfotec.ac.cr/wp-content/uploads/2025/09/Redes-1-2.png" title="Imagen sobre el Evento de Ajedrez" alt="Imagen sobre el Evento de Ajedrez" width="200" height="200">
+        <figcaption>
+            Fig1. Evento Mentes Maestras
+        </figcaption>
+    </figure>
+    
+    <figure>
+        <img src="../assets/img/eventoajedrez.png" alt="Evento" width="500" height="500">
+        <figcaption>
+            Fig2. Evento Mentes Maestras
+        </figcaption>
+    </figure>
+
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAABpCAYAAAATHj7QAAAVOElEQVR4nO1dXYxjyVU+uxkpyWSBGCJHSsKfh4iQgHjwCCEhQCBPzBs84H5BAh6wWzI8JCLCBoSQIhS5HxDJi9HYIhISL7QRBCEhnDYEAQJFGj9kI5aEZUw2DFnWYbmz2pltzfR0NyrXKd9z61bdW/e/bNcnWTN9b92qU1Xn1DlVdeoUODg4ODg4ODg4ODg4ODg4WIHnrOqG/vqfAOADBZbwWRjXP2lIywAARvjXEMb1kwTpFzCu38lIq66cFgCcFV7OLiGvNumvrzPnkRdypuVGpZUJgwn5dxeY/7cXmLeDg7V43nWNg8P+o1yN3p4yE4v9PABYwry7cDyWGN7GnONY7hLhBcK1SQzKE/T2dIRCPsMnI2hPZzDvRs99HYIY1xkju3k5hWuTWJRjurenbKGqAQBMqHsA0AGAo82/7WmvFBocHA4YZc3RmWBPAKCGJhbT6gN81nEM6OBQLMoy3ZmAr1Crt/DvI/y7cRB93F/3yKA2xHnlAJ/V8PlsM/iN6/q1i/66SbbxZjCuTxTPVzCuHxvmoU/LaWa/Jnm6xHL1Uy6zut4J1bO/bmC6lsQX0e2ia5Nwuhqmo3QscfvUfL0omk5W/izi63xpMURZGn2FjQJYGQ+f1Q5o8aSGbSB+91CIaiRNZ7MfzAXFJB/67Yo8j5sOUTrCYEzYXzP67kpCDvj3aPOeM2vaugbB6yzSyYO/aJe7CdvEBx8M7ivoaBq0uZxPFJ2nEXTSPLLTkgBlCfqQMB8brY6xUXo4bz80jMg0Zoht4JE2uItawxzjuhcYNLkTiQ6yhpYhC/gE6ZwQOpsbpo7HgFh0J5jPLFBfzvh3CdOLdhFlCvQyCAHN3yN18heH48AHtrOQBlbTOSiUloQox3Sfd5fQng6xgit8WtsIPHt3mDgOmJj99QkykRCwAQ6ISTAj3zfJlpMMOgjI5nOTmN0emth0ABkSOlvQX3diTNUamt1RdaFCEfZC7K8nqEWBrO2Yg9Hot4uqTk2SfxSoBg7Xqb+eEQ+9gVKJ5UdLIpTnMMP3zG9j5U82FTzcffRJaB7JNTJlHNlkNgEdNHVmeSOgkcb1lZSCLo6eBJjQp3OoSa/CIkbIaR4r5dyf0yDaq4HCkAS0LVR1WhpaljSfYegtn1uLQa+moTMvWhKhXIeZedeL0DIMnwCAFwqk4KUC804CWbg4WCf31+Kv5ILOGM3/Xme667V5uFy1pg6WE0dnksFc3S4cVCD0c3015AUzHZ1R5nYQfMDT0SkGLhWd+dNiALt83cf1P7OAijIQNV1ZRAipCfzvmUaRNUb8/NxnzrC2V9EZt5aQZGoWJcALokWj6FLBp1Ffp3g68znokg8tCeF83fcPVIOqBowkGr0s+At8ukVEJhTMrOe/9IKug15D541KaHGCvn+gwhsUWr5qLBhtWSJzx4HOSU+L2F46dORjuvfXXyuhHT8J4/pnpXLZAs1HE+Rhfh59V8Hn+R7ZW6agf5s4dURNIZLOk6MgPCSbmO9d3J6a4MKlLQOSDz5oNnHgpG2RZdpVGPKaoxd5hlzgWxXP6gnLPpTz6Iutx1Vwnh43P5dxZpAmO5gg99d3cF9eCEoD95MHuG2VxmTPH1zAB3kvlhUNZ7rvJ6gQU+H2tU0BbpaZwISdL3bdkaYfNdy/vhfjhFI8fIcZSscS6RW/6gcjBWyLMOOQD2bEu4oKuvh/vNkOG+ErP9QYH4AWuN/fI04qNXS9hdiwXsVhQNpwuTmvIVsZwZBi1sBp9H0EZz7BgGKrjc4d7fdG5KvsbDvtluQJN0rsHpwfxCKh8GizUnur4AR9fyHM3wYKBtXsu+ORyE36Y4nm8o8284HS98W3cYEwAk7QzZB0b9kGjSm7wwqN7imcaHTf6dFfM816tvmVA7Pphhp5C2WW/q1kgHCCroduQUsHmsaG0Z5qwEaC+Tk9VRa1hdaJPOpqCqYpWWhj/ovKK4uZTA+NRB1jLQOV0OIEXY8lYfpGJBNy05iak9Wbxnz+KJiqJx2tjAIVKLWJLDve5AfTo7VJQQdekzMAcYhKG5dP3rQYwQm6DnwORrXfqXKk5UJOz2UvYkzjMiEGHKo54gYh+r6n0To9Tfrk4Kvs3jZfVXn8WZYyg3VS5x+9dReks6XhBRMLJzstKeC216IxJAc3ariXOyNarCGFApKPcFYNecBZxa4Us7Pl/fWKmPtneFaeBpyg20fJzoarcUKCcdzH8mgbD4gFkWYgnZH8W7iuIIJoNEhwDJN8hHCe4dl80Z5NQwHNi5ZEcIIeBe6xdYQaWzBaR2PSehhMwqatK1nzmWrCIxJJJSqSzHEuW0xsX9wPyFCL2IeWz+yb5s/68ZjUQ6V5JwYhuIZkYK9hIBVVGv0+en60JIIz3ePABfc2CXKowmSTxiQoYLm0e5JWNxN0P066Lv0KnUXy0OaiTJM2vpV6YOF9c6RZ1DsxCI4h2vO2pl1WmL/JcdfstCREPp5P/oVwReLjMK5/Wir3cwDwswnK/AyM6x/LWNemdGZ7v6Pk+Ic3BOLN/+xlBjVc3m0c7MN0p/j42oyw8uK2LIulxQBO0B0cDgDOdHdwOAAclqBfPHq/BVQ4OJSOwxL0p4++zwIqHBxKx24L+vX12yygwsHBeuzmPnp7+p7N4tz5+qNw870WEOTgYDd2S9Db03cAwG8AwK9vQktdl7HY7+Cw+9gdQX94nwUgeBEAPmgBNQ4OOwX7Bf36CuC1e0t4/OqvWUANdSChIYWKdyLZd3AnGXGmYIVtup/38lXAQ3YL+uWTc/ivL7wCl0+quFQgCM6IA+3pJH4Q5CTWLTR7TLFF4MYQfihCpmmJLqVRdKjmPaoLDvOlN5h3Q3FvOn2/igz5zPskn8AXLD5ekXWFHHkoBexddb945MErn/fg8smHKqeFRVPhDBV1BLGB8chPYwI2lIFmhXHVzBC8D13XXiLk872YoBT2o2IeslPQn775Onz9767g+up9ldPCL7VPcj64Y3hveNGw97YTLuR3ExzHbOCx0N0Udgt4yD5Bv3j8Bjz4+0uA6++onBZuyqURmFblMcirCKBoAi6squOdJrDBWkoGS3jILkG/uriAB194CNdXdQuogYyRPgYVM2V0+KvqkKVNo86q2woreMiuxbgH//AVuLr8IQsoAQyEoGpkEfxAHJ3skIghFDV8Z7awUsxlCZ3C4teloZcfydQNPsNN9BW28szTDTRWSWcT2YWHgV5oT2CqFynDi40mSNs3ZfNQBOwR9Ndf+hJcPPphCygR0K30H0nnoye4Wqpa/W3lFGopLTqpIrIUB52QHwdWmvm22hEuYMkaUWxN7UIcAGt4yA7Tna2wP3z5+y2ghELVSZ4yCAJ/ptrzrXo+WUOtYgtUbbqK2E7Sad/qt1vNYA0P2SHo3/jnbwDAOyygJA5RDhwqDWPDHNkmQVcxrd5JZMduQzFEJTxUvaA/evAyPDv/SOV0ZIetTNnZuZXqw0VhPFT9HP2bL+7LUVPP4nljLgs6DoWjMB6qVtCZNr+62I9DKnyeaaswOUHfBRTIQ9Wa7q+/9KTS8g8HLetdYh0KRXWCfvHWI3h2/oOue0uDnZ5yDqWgOkF/+PJXXBeXCnt93x0KR3WC/vjVb3HdWxgWihXcRolXAztYhmoW464uLuHyiYsUQ8FdNuMwS3BWeaLwKuvkds2x2YGL5V7cZJN/35SOvAT9LQC4aZz6/JsrFxIqBBPHiCRCM9MIel63vZocLhnuiKtqHPLum9KRl+n+f4lSP35tHz2e7AL3F5e9zhqWucQ6lIS8BP1BotRP33Dx2MuBypTc7UgtDqmQl6DfT5T62fkLrrtKgeoaZ6fRDxB5zdG/BAC/YJz66tm3HXrDK6APKugjWZRQfrZ7IWnxGoZyygqTOem+TNHy75uSkZegfzFR6uvrd+VS6puvAJz/r3n6q6f/kUu5RaC41emZwlzPrtWjop3uG/Zg5yAvQf8XJnYAYLg3fp3PkdTH/5P0i//OpdzdwkwRo83N0w8M+czRx/ULAPjrBF9cHXrDlwZ+ptsdaDlw5OkZ90fmSZ97fOgNXzL2YS/bIQPyFPS/BYCXjFI+99y567QSMa7P9mhhzCEF8nOBHdevoL/+LQD4XGza52+8CZdP96u/+Ep2eJHLnkUrlUusg00okIfy9XUf1/8S+uu/AYCfiS715v4JOo+HZvMil8ol1sEuFMZDRZxe+xUAWEemeLsLYVY61C6xDgeC/AV9XGdbWD/Pjq5o07zzPe/e0eaNitKiGoltu/a36tV31TqBvk33MypOJTxUzHn0cf0fAeDntMJ+s36LxZgppOz8oGpg9TVH+htIbNOgKpfYMqFrU92UQvd8V+5Nt4aHijuPPq5/HvrrnwCAPweA7wy8e/7G8/C2t38VLp/8QGHlZ4eugU83VwL575sRDGm+rWV+oZ6X+tyz2iW2TOjaY4TaWwxENYyIo6LTK13Q0/dNuTwUgWIDT4zr7F5rds3SHwDALwXevfC+t+CN/yy0+IyYRdyHZXIbaNQNJCqYXh64yGiCq1xiywFbJ9APND3DcFcnFVzskLZvyuYhLYoPJcUvw/tlAPhRAJhvn7/7gx+y2kOOM1PyC/l85BXgIW9Uvac+zFD+aqe8/CziofJixo3rX4RxnW27fRgAPgU33vl1uHHzX0srPw34zZtpGOsEnVTsA2e+6mjjq/9pGNjDywl3y/HHEh4qPzjkuP5vMK7/NozrHwa4/lTp5SfFuH6csKPY1by2anOBal1iuTl6J4FmX27S80Fi92ABD1V7gcOz8z8FgBcrpcEEvKPuxGhC1pG3Ut2/XTa4pqh2R4Af/byF2l1HyxKvVL69s0IuUDEPFXH5fjK0p2wb7i9KKu0zMO9+LHMu8vbIPkQ6rRp81Z3uMS/39DZVjpJ5qHpBh42wswMxP11CSfkIuoPDjsGO+9EBfhUA3D1sDg4FwQ5Bn3fZ9Uy/aQElDg57CVs0OsOnAeCvLKDDwWHvYI+gz7vXAPCLAPDvFlDj4LBXsEmjM2F/yJbmAOBVC6hxcNgbVHPJYhTm3a9Be9pGp456pbS0pw2M+NHAvd4lzLsLRZoe+i9zF81518N3NfR1XsG8G94bbU/5QQb6jn/TwzI9zG8lfddEukSZs1CaqDLU6Xp4uAIwv+jtnnDb0Ho3sQ7s2ZJ8E6SF/606tqluL/5Nh/jKL5FWT0rTwEMi4Xqoy1xJfRBNl99WJ5q+UdW9RaLHMD4KO9D45XqYJjfPOPsEHTaM8GVoT38M49B9VyU0cGa5FzqQ0J6yzh3i/1ubk0jBND1oT+8gAwih9aA9nQQYkjPECIXkhJR5JjEZy+9oy7CcyeSDEgNoT4dK5vEPiugFvT09lUIY9TA/nbDF1Vsw+1I6aSbT0tMKlIre9nSkOOU1gvb0tiRwHZK3PGCpy2T9Me8eGdIl6qeic0BurV1i3oPQwRjWhn557O97ZKAVz5iw31bQkRh2me4U8y67bOFHMGZ8FRAdc4QeXMKriY+yXPOeSmmGyCDyyaSa4mSW6qTWXfx+iPkJRjjF8gAZiQ0Yt0maZWr/dc6EHfz+Fua7RAEKnzJLVm8TrDAP+gszNx8YB4ROUa7KmulgGzVJu1GspLIWm2+C9TWhaxDInw/UwTbjeY6wTUWfzbC8AemDJun32ziA7LlGF5h3X4P29Kewocp2dGlumMU3n1aSdmihAA9JmhPsWBWD9YjmroWCAPJnzU0ZviZdIfOMNuWxEZ4LFDULVxkZQgjFMTG9h2hZtBQaMWm946GbdgQhtN2CpFdp/dbWrOYDg9/uFLTM9lQc3W1o06hRk/LvKI6kCsEfbvusPT3G5x38VpRLB61cXX7tFnTYNDZzpPk4tKcs6OQfAsD3llTyEkfdETL7Sup40aGym+aKCAOQNI2N2c3NazGn96T8agq/b2/7npXfnq6QrhWhK4uraA0HNJrHirxTpQfDepuBD2Y+1AImGJ9pUcC6y3QDEawZCpIQpiD8MmtksJtp0nCE6fK2+fMBTlhbtA3E/1ckHzaV8xTvRjjoLA0HP2PYa7rLmHfZWfaPAMDvscuYSijxBDttgNrtPrSnZ6HON8OSMAWQOVwaARXz8BGuITC60pjMtqCBt/H6P1Ubc204IVMEkVaes3dQUMR0hlkZTSkNLfMeWVjzNGl0dC0w/xbR5ml81idbxcKnRfc3c3bV1CkldkfQYdPZ5zDv/g4AfA8A/D4APCywLDGnGmJHCI2Vdh66RPN7hIyVztzmZv0daQ7XUzD8rkBcGUV/6gFw3j3GdYEJESh/LYH/S0NSiTSywMhlemgpNCPSqOgS+Q+2i65pTG42wPBFtyER+qa0NpMJ9pvuKsy77ArVT0B7+rt4XTP7/Xjuh3S4+US3Xc5Sz0N5Pi3CEBPD0EkquuiKbg01jtpELRr+Yl5aU9NDATatO10QbUlrCUKge7g7ISC3TbBMLuD3iKVlStdiq9XFukWW6D3hLb4R1inzotxuaXQZ8+7jzZx33v1JAHg/ALCQVX8CAF/NHKaKMUrYVKOdKEbzDvmmtmV6eY7Ft8eWyBDhvV+eXsy/6UDi770CMgB9z/PJMkdf4PoB1XqiTJXwhuvNtSitNw16CEh3A+uebpGJ1TlstXiB9/4gKqdp5mkGS5iR9RaVQIr6Uj4Rlofo0yb6BxSG3dToKsy7zJvuj/HHGu9d2JgfAID34pXOZkEu/JVuwJXuFebVwlVfD/fGxTbJmbQYpdOswxjNO9nOvdvTBSlzttHi/h76AN97KEyNmPBMNcU8XjiJTLZzQ16fGtHQ4X15viAo19vbLiYyYeROJTPUrI3tAMYh1z2KNooR0dTyYLMItL3wc4Ctg82ptIMgl0nzSUYXUzS8jh62jdxi4oacEVoOHln8E3ndxcFoSZRBC9PsQBTYKsG0PcCX8ZcMvMOGqCGaUqP75hxzeODMILy1VriNohZkrtX1HccFBEhEVOEZd4zvJ0RzCeYUaaLMdtU+/gqFYrlxyBGCROupW80P19vDgaa11eLhNMvAFpMJbUGIv1skvajDAp1+INS+zNQXOxX+YCiX6SFtQUE3owsCA0v4nbdxJOLC3CJWDW2LY2z/JrGCRJpcgm/YEXjCZnDBUm1B+RBpVFsi/mgf/laY4Op3+u8gsPWjTwMB+mWEv4srU5932rYxpy1Mp7wXHl8OH8BVZXqS12I0XVFlCfri6FB/55eb8/aag4ODg4ODg4ODg4ODg4ODg4ODQxkAgP8Hqwo/n0bdbHAAAAAASUVORK5CYII=" />
+    
+    
+</aside>
+
+<br>
+<br>
+
+<footer>
+    <p>Universidad Cenfotec</p>
+    <p><a href="mailto:info@ucenfotec.ac.cr" alt="Opción de contacto">Información de Contacto</a></p>
+</footer>
+
+</body>
+</html>

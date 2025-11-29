@@ -1,0 +1,23 @@
+h1 {
+    text-transform: uppercase;
+    background-color: blue;
+    color: #fff;
+}
+
+p {
+    background-color: beige;
+}
+
+.colorfondo{
+    background-color: burlywood !important;
+}
+
+.bg-secondary{
+    background-color: chocolate !important; 
+}
+
+@media screen and (max-width:575px){
+    .mostrar{
+        display: none;
+    }
+}

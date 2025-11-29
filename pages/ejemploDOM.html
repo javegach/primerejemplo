@@ -1,0 +1,126 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manipulación del DOM con JavaScript</title>
+</head>
+<body>
+
+    <header></header>
+    <main>
+
+        <p>Posición en bloque por defecto</p>
+        <h1>Título 1</h1>
+        <h2>Título 2</h2>
+        <h3>Título 3</h3>
+        <h4>Título 4</h4>
+        <h5>Título 5</h5>
+        <h6>Título 6</h6>
+
+        <div id="general">
+
+            <p>Este es un nuevo <span class="resaltado letraformato">párrafo</span> </p>
+
+            <a href="https://www.google.com/">Enlace nuevo sin target </a>
+            <a href="https://www.google.com/" target="_blank">Enlace nuevo con target</a>
+
+            <p class="resaltado letraformato">Costa Rica, oficialmente República de Costa Ric   a, es un Estado soberano organizado como una república presidencialista unitaria compuesta por 7 provincias. Ubicado en Centroamérica, posee un territorio con un área total de 51 179 km². Limita con Nicaragua al norte, el mar Caribe al este, Panamá al sureste y el océano Pacífico al oeste. En cuanto a los bordes marítimos, colinda con Nicaragua, Colombia, Panamá y Ecuador.11​12​ Cuenta con 5 226 362 habitantes.13​ Su capital, centro político y económico es San José, y su idioma oficial es el español.14​ Su punto más austral es la Isla del Coco.</p>
+
+            <p class="marcado letraformato">Con una sólida y longeva democracia, de entre las más funcionales del mundo,15​16​17​ y una eficaz capacidad de movilidad social que le permite alcanzar un elevado progreso general en relación con la distribución y tamaño de su economía,18​ Costa Rica es el quincuagésimo país más rico del mundo según datos del Fondo Monetario Internacional y uno de los más estables de América,19​ obteniendo resultados generalmente favorables en todos los índices de desarrollo y competitividad.20​21​22​23​24​25​26​ Aunado a esto, posee diversas políticas a la vanguardia para la protección del ambiente27​28​29​ y es una nación desmilitarizada por voluntad propia desde 1948,30​ manteniendo un elevado nivel de prosperidad de acuerdo al Instituto Legatum,31​</p>
+        
+            <p>El país actualmente afronta importantes retos en su desarrollo relacionados con su desgastada infraestructura vial y de transporte, las cuales presentan una complicada capacidad para mejorar a corto plazo; el déficit fiscal, la sostenibilidad y eficacia de su Estado benefactor, el estancamiento en el combate a la pobreza,32​ la tendencia al alza en sus tasas de delincuencia, desempleo y desigualdad; así como profundos problemas ecológicos relacionados con prácticas agrícolas nocivas, mala gestión de residuos y contaminación de cuerpos de agua.33​34​35​36​</p>
+    
+        </div>
+
+    </main>
+    <footer></footer>
+
+    <script>
+    
+        // Obtiene un elemento por id
+        var elementoA = document.getElementById('general');
+        console.log("ID GENERAL:");
+        console.log(elementoA);
+        
+        // Sus nodos hijos
+        var elementosHijos = elementoA.childNodes;
+        console.log("ElementoA Hijos:");
+        console.log(elementosHijos);
+        
+        // Su nodo padre
+        var elementoPadre = elementoA.parentNode;
+        console.log("ElementoA Padre:");
+        console.log(elementoPadre);
+
+        // Obtiene una lista con los elementos que tienen esa clase CSS
+        var elementosB = document.getElementsByClassName('resaltado');
+        console.log("CLASS RESALTADO:");
+        console.log(elementosB);
+
+        // Obtiene una HTMLCollection con los todos los elementos 'p'
+        var elementosC = document.getElementsByTagName('P');
+        console.log("ELEMENTOS P:");
+        console.log(elementosC);
+
+        // Devuelve el primer elemento del documento que cumpla la selección (la notación es como en CSS)
+        var elementoD = document.querySelector('.letraformato');
+        console.log("PRIMER ELEMENTO CLASE LETRAFORMATO:");
+        console.log(elementoD);
+        elementoD.style.fontSize = "100px";
+        
+        // Devuelve una lista de elementos que cumplen con la selección (notación como en CSS)
+        var elementosE = document.querySelectorAll('p.resaltado, p.marcado');
+        console.log("ELEMENTOS P.RESALTADO y P.MARCADO:");
+        console.log(elementosE);
+        
+        for(let p = 0; p < elementosE.length; p++)
+        {
+            elementosE[p].title = "Hola #" + p;
+        }   
+        
+        // Para crear elementos llamamos a createElement con el nombre del elemento
+        var nuevoH2 = document.createElement('h2');
+        var nuevoH3 = document.createElement('h3');
+        var nuevoParrafo = document.createElement('p');
+
+        // Crear nodos de texto para un elemento
+        var textoH2 = document.createTextNode('Nuevo Título');
+        var textoParrafo = document.createTextNode('Este es el texto del párrafo...');
+
+        // Añadir el texto a los elementos
+        nuevoH2.appendChild(textoH2);
+        nuevoParrafo.appendChild(textoParrafo);
+
+        nuevoH3.innerHTML = '<b>Nuevo Título H3</b>';
+        
+        //elementoPadre.appendChild(nuevoH2);
+        elementoPadre.appendChild(nuevoParrafo);
+        elementoPadre.appendChild(nuevoH3);
+
+        // También podemos añadir elementos ANTES del elemento seleccionado
+        // Tomamos el padre
+        // Insertamos el h2 antes de la cabecera
+        elementoPadre.insertBefore(nuevoH2, elementoA);
+
+        // También podemos añadir directamente un trozo de HTML antes o después de un elemento del DOM
+        nuevoParrafo.insertAdjacentHTML('beforebegin', '<div><p>Este es un <b>parrafo</b> nuevo.</p></div>');
+
+        // beforebegin - El nuevo HTML es insertado justo antes del elemento, a la misma altura (hermano).
+        // afterbegin - El nuevo HTML se inserta dentro del elemento, antes del primer hijo.
+        // beforeend - El nuevo HTML se inserta dentro del elemento, después del último hijo.
+        // afterend - El nuevo HTML es insertado justo después del elemento, a la misma altura (hermano).
+
+         // Devuelve el primer elemento del documento que cumpla la selección (la notación es como en CSS)
+        var elementoFinal = document.querySelector('.letraformato');
+        console.log("PRIMER ELEMENTO FINAL CLASE LETRAFORMATO:");
+        console.log(elementoFinal);
+        elementoFinal.classList.remove('letraformato');
+        elementoFinal.classList.add('otraclase'); 
+        
+    </script>
+
+</body>
+</html>
+
